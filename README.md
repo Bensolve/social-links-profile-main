@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Bensolve/social-links-profile-main)
-- Live Site URL: [Add live site URL here](https://social-links-profile-main-solution.netlify.app/)
+- Solution URL: [Github](https://github.com/Bensolve/social-links-profile-main)
+- Live Site URL: [Live site ](https://social-links-profile-main-solution.netlify.app/)
 
 ## My process
 
@@ -61,6 +61,6 @@ when we say interactive elements we are trying to say an elemrnt that does somet
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Bensolve)
 - Twitter - [@yourusername](https://x.com/Benjaminkissa1)
 
-*
+
 
 

@@ -138,3 +138,9 @@ nav ul li a:focus-visible {
   color: var(--clr-neutral-900);  
        /* black text on green */
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  nav ul li a {
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
