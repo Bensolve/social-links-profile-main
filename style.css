@@ -54,13 +54,14 @@ body {
 
  main {
   background-color: var(--clr-neutral-800); /* dark card background */
-  padding: var(--space-xl) var(--space-lg); /* padding around the card content */
+  padding: var(--space-md) var(--space-lg); /* padding around the card content */
   border-radius: 1rem; /* rounded card corners */
   width: 100%; /* responsive width */
   max-width: var(--max-width); /* 384px limit from your root variables */
   text-align: center; /* center-align text inside the card */
   display: grid; /* lets us use gap for spacing below */
-  gap: var(--space-md); /* 24px gap between children */
+ gap: clamp(var(--space-sm), 1vw, var(--space-md));
+; /* 24px gap between children */
 }
 
 
@@ -69,8 +70,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-md);
+   gap: clamp(0.25rem, 1vw, 0.75rem);
+ /* margin-bottom: clamp(var(--space-xs), 1vw, var(--space-sm)); */
+
 }
 
 .profile-header img {
@@ -97,12 +99,13 @@ body {
   text-align: center;
   font-size: var(--fs-body);
   color: var(--clr-neutral-100);
-  margin-bottom: var(--space-md);
+  /* margin-bottom: var(--space-md); */
 }
 
 h1 {
   font-size: 1.25rem; /* 20px - bigger than body text */
   font-weight: var(--fw-bold); /* bold text */
+  margin-block-end: 0.7rem;
 }
 
 .location {
@@ -129,7 +132,7 @@ nav ul li a {
   padding: var(--space-sm);
   border-radius: 0.5rem;
   font-weight: var(--fw-semibold);
-  /* transition: background-color 0.3s, color 0.3s; */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover,
@@ -139,8 +142,4 @@ nav ul li a:focus-visible {
        /* black text on green */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  nav ul li a {
-    transition: background-color 0.3s, color 0.3s;
-  }
-}
+
